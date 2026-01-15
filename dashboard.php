@@ -89,7 +89,7 @@ session_start();
     <h2>Dashboard</h2>
     <a href="dashboard.php?page=home">Home</a>
     <a href="dashboard.php?page=listProducts">List Produk</a>
-    <a href="dashboard.php?page=customer">Customer</a>
+    <a href="dashboard.php?page=pelanggan">Pelanggan</a>
     <a href="dashboard.php?page=transaksi">Transaksi</a>
     <a href="dashboard.php?page=laporan">Laporan</a>
 </div>
@@ -117,7 +117,7 @@ session_start();
 <script>
 function toggleMenu() {
     var menu = document.getElementById("profileMenu");
-    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    menu.style.display = (menu.style.display == "block") ? "none" : "block";
 }
 
 // Menutup dropdown jika klik di luar
