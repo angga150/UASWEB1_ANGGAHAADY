@@ -1,6 +1,9 @@
 <?php
 include 'koneksi.php';
 $data = mysqli_query($conn, "SELECT * FROM transaksi");
+
+$nama_barang = mysqli_query($conn, "SELECT nama_barang FROM barang");
+$row_barang = mysqli_fetch_assoc($nama_barang);
 ?>
 <style>
 .card {
@@ -66,7 +69,7 @@ while ($row = mysqli_fetch_assoc($data)) {
 <tr>
 
 <td><?= $row['id']; ?></td>
-<td><?= $row['id_barang']; ?></td>
+<td><?= $row_barang['nama_barang']; ?></td>
 <td><?= $row['total_barang']; ?></td>
 <td><?= $row['total_harga']; ?></td>
 <td><?= $row['tanggal']; ?></td>

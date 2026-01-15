@@ -46,8 +46,8 @@ background: #f8f8f8;
 </style>
 <div class="card">
 <div class="card-header">
-<h3>List transaksi</h3>
-<a href="dashboard.php?page=tambah-laporan" class="btn btn-tambah">+ Tambah transaksi</a>
+<h3>List laporan</h3>
+<a href="dashboard.php?page=tambah-laporan" class="btn btn-tambah">+ Tambah laporan</a>
 </div>
 <table>
 <tr>
