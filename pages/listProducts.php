@@ -7,7 +7,7 @@ $data = mysqli_query($conn, "SELECT * FROM barang");
 background: white;
 padding: 20px;
 border-radius: 6px;
-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 .card-header {
 display: flex;
@@ -35,8 +35,7 @@ table {
 width: 100%;
 border-collapse: collapse;
 }
-th,
-td {
+th, td {
 padding: 10px;
 border-bottom: 1px solid #ddd;
 text-align: center;
@@ -48,7 +47,7 @@ background: #f8f8f8;
 <div class="card">
 <div class="card-header">
 <h3>List Produk</h3>
-<a href="dashboard.php?page=tambah" class="btn btn-tambah">+ Tambah Produk</a>
+<a href="dashboard.php?page=tambah-product" class="btn btn-tambah">+ Tambah Produk</a>
 </div>
 <table>
 <tr>
@@ -74,9 +73,9 @@ while ($row = mysqli_fetch_assoc($data)) {
 <td><?= $row['stok']; ?></td>
 <td><?= $row['satuan']; ?></td>
 <td>
-<a href="dashboard.php?page=edit&id=<?= $row['id_barang']; ?>" class="btn
-btn-edit">Edit</a>
-<a href="dashboard.php?page=hapus&id=<?= $row['id_barang']; ?>"
+<a href="dashboard.php?page=edit-product&id=<?= $row['id_barang']; ?>" class="
+btn btn-edit">Edit</a>
+<a href="dashboard.php?page=hapus-product&id=<?= $row['id_barang']; ?>"
 class="btn btn-hapus"
 onclick="return confirm('Yakin hapus data?')">
 Hapus
