@@ -71,9 +71,9 @@ while ($row = mysqli_fetch_assoc($data)) {
 <td><?= $row['total_harga']; ?></td>
 <td><?= $row['tanggal']; ?></td>
 <td>
-<a href="dashboard.php?page=edit-pelanggan&id=<?= $row['id']; ?>" class="
+<a href="dashboard.php?page=edit-transaksi&id=<?= $row['id']; ?>" class="
 btn btn-edit">Edit</a>
-<a href="dashboard.php?page=hapus-pelanggan&id=<?= $row['id']; ?>"
+<a href="dashboard.php?page=hapus-transaksi&id=<?= $row['id']; ?>"
 class="btn btn-hapus"
 onclick="return confirm('Yakin hapus data?')">
 Hapus
